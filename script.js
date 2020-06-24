@@ -135,5 +135,5 @@ $('.add').click(function(){
 })
 
 $('.sa').click(function(){
-    window.location.href = "xxxxxx";
+    window.location.href = "https://ulikgames.github.io/Birthday-Present/";
 })
