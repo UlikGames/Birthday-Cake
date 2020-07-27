@@ -389,6 +389,7 @@ body .birthday_inner__stage button {
 body .birthday_inner__stage button:hover {
   background: #e77572;
   color: white;
+  stroke: white;
 }
 body .birthday_inner__stage .start {
   margin-top: 30px;
@@ -399,9 +400,54 @@ body .birthday_inner__stage .start {
   opacity: 0;
 }
 
+.main--wrapper {
+  position: relative;
+  width: 30%;
+  height: 30px;
+  display: inline-block;
+}
+
+.sonraki {
+  display: inline-block;
+  margin: 0;
+}
+
+.main--wrapper .main-content {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart--container {
+  width: 45px;
+  height: 35px;
+  margin-bottom: -10px;
+}
+.heart--container .heart {
+  stroke-width: 15;
+  stroke-dasharray: 500;
+}
+.heart--container .heart-1 {
+  animation: draw 2s ease-in-out alternate infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+
 .sa {
   margin-top: 70px;
   display: none;
+  stroke: #e77572;
+}
+
+.sa:hover {
+  stroke: white;
 }
 
 .svg {
@@ -559,7 +605,10 @@ path, polyline, line {
   stroke-miterlimit: 40;
   stroke-linejoin: round;
   fill: none;
-  stroke: #e77572;
   z-index: 1;
   opacity: 1;
+}
+
+g {
+  stroke: #e77572
 }
